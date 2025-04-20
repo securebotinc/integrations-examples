@@ -1,0 +1,46 @@
+analyze_prs:
+  description: |
+    Analyze all open pull requests in the repository.
+    Identify key aspects that need review, including:
+    - PR description and context
+    - Impact of changes
+    - Potential risks
+    - Required expertise for review
+  expected_output: |
+    A structured analysis of each PR with:
+    - Key aspects identified
+    - Priority level
+    - Required review focus areas
+
+review_code_changes:
+  description: |
+    Review the code changes in each pull request.
+    Focus on:
+    - Code quality and standards
+    - Potential bugs and issues
+    - Performance implications
+    - Security considerations
+    - Test coverage
+  expected_output: |
+    Detailed code review for each PR with:
+    - Identified issues
+    - Suggested improvements
+    - Code quality assessment
+    - Security considerations
+
+create_pr_reviews:
+  description: |
+    Create ONE review for each pull request.
+    For each PR, provide:
+    - Brief summary of changes
+    - Key findings from analysis
+    - Specific actionable suggestions
+    - Overall assessment
+    Keep the review focused and concise.
+  expected_output: |
+    One clear and concise review per PR containing:
+    - Summary of changes
+    - Key findings
+    - Specific suggestions
+    - Overall assessment
+    Each PR should have exactly one review. Do not mix the reviews for different PRs in the same review.

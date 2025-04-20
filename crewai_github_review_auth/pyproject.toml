@@ -1,0 +1,33 @@
+[project]
+name = "github-pr-review"
+version = "0.1.0"
+description = "A CrewAI-based GitHub PR review system"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+dependencies = [
+    "crewai>=0.11.0",
+    "python-dotenv>=0.19.0",
+    "requests>=2.31.0",
+    "pyyaml>=6.0.1",
+    "securebot-sdk>=0.1.1",
+    "openinference-instrumentation-openai>=0.1.25",
+    "openinference-instrumentation-crewai>=0.1.8",
+    "opentelemetry-instrumentation-httpx>=0.53b1",
+    "opentelemetry-instrumentation-requests>=0.53b1",
+]
+requires-python = ">=3.13"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["github_pr_review"]
