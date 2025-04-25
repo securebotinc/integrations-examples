@@ -5,18 +5,15 @@ The [SecureBot AI Gateway](https://securebot.io) helps you secure, observe, and 
 
 Each example is designed to be easy to follow and highlights specific SecureBot capabilities, including:
 
-- Instrumenting a basic Python agent
-
-- Connecting tools and resources securely
-
-- Capturing traces and monitoring agent behavior
-
-- Enabling secure identity and resource access
+- Instrumenting a basic Python agent   
+- Connecting tools and resources securely     
+- Capturing traces and monitoring agent behavior  
+- Enabling secure identity and resource access   
 
 Whether you're just getting started or looking to add security and observability to your AI workflows, these examples will help you quickly integrate SecureBot into your projects.
 
 ## Useful Links
-[SecureBot.io](https://securebot.io)
+[SecureBot.io](https://securebot.io)    
 [Documentation](https://docs.securebot.io)
 
 ## Examples
